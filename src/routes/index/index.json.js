@@ -7,8 +7,14 @@ export async function get(req, res, next){
     }
     catch(e){
         res.end(JSON.stringify(e))
-        console.log(data);
+        //console.log(data);
     }
     
+}
+
+export async function post(req, res, next){	
+    
+    const {selected, wallet} = req.body;
+    res.end(JSON.stringify(jobs))
 }
 

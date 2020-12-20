@@ -14,5 +14,5 @@
 <div class="column is-5 has-text-centered">
     <img src="Bitcoin_2.png" alt="Bitcoin">
 </div>
-<Calculator/>
+<Calculator on:message/>
 

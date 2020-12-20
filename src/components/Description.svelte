@@ -16,6 +16,6 @@
         <div class="column is-5">
             <img src="Bitcoin_2.png" alt="Bitcoin" class="px-6">
 		</div>
-		<Calculator/>
+		<Calculator on:message/>
 	</div>
 </section>	

@@ -1,4 +1,3 @@
-const request = require("request");
 const got = require('got');
 export let data = "";
 
