@@ -11,7 +11,7 @@
         Saepe, cumque?</p>
     </div>
 </div>
-<div class="column is-5 has-text-centered">
+<div class="column is-4 has-text-centered">
     <img src="Bitcoin_2.png" alt="Bitcoin">
 </div>
 <Calculator on:message/>

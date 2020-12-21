@@ -6,20 +6,24 @@
 
     let wallet;
     let currencies = [
-		{ id: 1, text: `Ethereum` },
-		{ id: 2, text: `Ethereum Classic`},
-		{ id: 3, text: `Bitcoin` }
+		{ id: 1, text: `Ethereum` , shortcut: 'ETH', coinLoreID: '80'},
+		{ id: 2, text: `Ethereum Classic`, shortcut: 'ETC', coinLoreID: '118'},
+		{ id: 3, text: `Bitcoin` , shortcut: 'BTC', coinLoreID: '90'}
 	];
     let selected;
+    
 
     const handleSubmit = () =>{
-        dispatch('message');
+        dispatch('message', {
+            wallet: wallet,
+            currency: selected,
+        });
     }
 
 </script>
 
 
-<div class="column is-3 has-text-centered">
+<div class="column is-4 has-text-centered">
     <div class="container px-6 py-6">
         <div class="has-text-centered card">
             <p class="has-text-centered title is-size-4 mt-4">Kalkulator</p>
@@ -27,7 +31,7 @@
                 <div class="field">
                     <label class="label" for="wallet">Adres portfela</label>
                     <div class="control px-4">
-                        <input type="text" class="input" placeholder="" name="wallet" bind:value={wallet}>
+                        <input type="text" class="input" placeholder="" name="wallet" style="text-align: center;" bind:value={wallet}>
                     </div>
                         <label class="label mt-3" for= "currency">Waluta</label>
                     <div class="control mb-4">
