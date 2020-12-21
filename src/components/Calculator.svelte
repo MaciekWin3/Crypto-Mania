@@ -26,14 +26,14 @@
 <div class="column is-4 has-text-centered">
     <div class="container px-6 py-6">
         <div class="has-text-centered card">
-            <p class="has-text-centered title is-size-4 mt-4">Kalkulator</p>
+            <p class="has-text-centered title is-size-4 mt-4">Calculator</p>
             <form on:submit|preventDefault={handleSubmit}>
                 <div class="field">
-                    <label class="label" for="wallet">Adres portfela</label>
+                    <label class="label" for="wallet">Wallet Address</label>
                     <div class="control px-4">
                         <input type="text" class="input" placeholder="" name="wallet" style="text-align: center;" bind:value={wallet}>
                     </div>
-                        <label class="label mt-3" for= "currency">Waluta</label>
+                        <label class="label mt-3" for= "currency">Currency</label>
                     <div class="control mb-4">
                         <div class="select">
                             <select bind:value={selected} required>

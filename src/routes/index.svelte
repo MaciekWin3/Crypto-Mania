@@ -11,8 +11,8 @@
 
 	import Messages from '../components/Messages.svelte';
 	import Describtion from '../components/Describtion.svelte';
+	import Banner from '../components/Banner.svelte';
 	import { goto } from '@sapper/app';
-	import {MinerDataStore} from './store/index.js'
 
 	let MinerData;
 	let ApiData;
@@ -45,13 +45,6 @@
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ ApiData, MinerData, wallet})
 		});
-		
-		//console.log(MinerData);
-		//console.log(ApiData);
-		//console.log(wallet);
-
-		//const updatedData = await res.json();
-		//console.log(updatedData);
 
 		goto('results');
 
@@ -71,6 +64,7 @@
 		<Describtion on:message={handleSubmit}/>		
 	</div>
 </section>
+<Banner/>
 <Messages/>
 
 

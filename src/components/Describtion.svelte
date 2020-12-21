@@ -8,6 +8,12 @@
         <h2 class="is-size-3 subtitle">Kup teraz w naszym sklepie</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
         Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Saepe, cumque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
+        Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Saepe, cumque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
+        Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Saepe, cumque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
+        Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         Saepe, cumque?</p>
     </div>
 </div>
