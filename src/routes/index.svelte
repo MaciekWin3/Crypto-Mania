@@ -17,30 +17,38 @@
 	let MinerData;
 	let ApiData;
 
+	async function getData(path){
+		try {
+            const response = await fetch(path);
+            const exam = await response.json();
+            return exam;
+		} 
+		catch (error) {
+            console.error(error);
+        }
+	}
+
 
 	const handleSubmit = async (event) => {
 
 		let currency = event.detail.currency;
 		let wallet = event.detail.wallet;
 
-		MinerData = await fetch('https://'+ currency['shortcut'] +'.2miners.com/api/accounts/'+ wallet)
-			.then(res => res.json())
-			.then(data => MinerData = data)
-			.then(() => console.log(MinerData))
-			
-		fetch('https://api.coinlore.net/api/ticker/?id=' + currency['coinLoreID'])
-			.then(res => res.json())
-			.then(data => ApiData = data)
-			.then(() => console.log(ApiData))
+		let MinerPath = 'https://'+ currency['shortcut'] +'.2miners.com/api/accounts/'+ wallet;
+		let ApiPath = 'https://api.coinlore.net/api/ticker/?id=' + currency['coinLoreID'];
 
-			console.log("tu działa #funckaj?" + MinerData);
+		MinerData = await getData(MinerPath);
+		ApiData = await getData(ApiPath);
+		
 		const res = await fetch('index.json', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ ApiData, MinerData, wallet})
 		});
 		
-		console.log("tu działa?" + MinerData);
+		//console.log(MinerData);
+		//console.log(ApiData);
+		//console.log(wallet);
 
 		//const updatedData = await res.json();
 		//console.log(updatedData);

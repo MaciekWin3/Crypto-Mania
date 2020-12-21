@@ -11,7 +11,8 @@ export function post(req, res, next) {
     const { MinerData, ApiData, wallet } = req.body;
 
     data.push({ MinerData , ApiData, wallet});
-    console.log("postuje");
-    console.log(JSON.stringify(wallet));
-    res.end(JSON.stringify(MinerData , ApiData, wallet));
+    
+    console.log("POST");
+    //console.log(JSON.stringify([MinerData , ApiData, wallet]));
+    res.end(JSON.stringify([MinerData , ApiData, wallet]));
 }

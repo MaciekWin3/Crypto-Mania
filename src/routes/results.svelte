@@ -12,4 +12,4 @@
     console.log(data);
 </script>
   
-<h1>{data}</h1>
+<h1>{data[0].wallet}</h1>
