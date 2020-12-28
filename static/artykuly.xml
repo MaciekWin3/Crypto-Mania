@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles_page>
+    <article>
+        <title>masło przejmuje świat</title>
+        <content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus aut mollitia earum sunt debitis ab aliquid architecto atque id.</content>
+        <author>peter</author>
+        <date>01.01.1234</date>
+        <currency>ethernum-classic</currency>
+    </article>
+    <article>
+        <title>Gimper zgolił włosy</title>
+        <content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum placeat necessitatibus non, perferendis officiis, voluptatibus quam odit voluptates vero possimus provident, suscipit eligendi voluptatem impedit.</content>
+        <author>marian</author>
+        <date>01.01.1234</date>
+        <currency>bitcoin</currency>
+    </article>
+    <article>
+        <title>Marcin najman jest gupi</title>
+        <content>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit officiis nulla, nostrum facilis ipsam corporis.</content>
+        <author>dzban</author>
+        <date>01.01.1234</date>
+        <currency>ethernum</currency>
+    </article>
+</articles_page>

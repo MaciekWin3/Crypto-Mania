@@ -1,7 +1,9 @@
-import { data } from './_data';
+let data = [];
 
 
 export function get(req, res, next) {
+
+
   
   res.end(JSON.stringify(data));
 
@@ -10,9 +12,15 @@ export function get(req, res, next) {
 export function post(req, res, next) {
     const { MinerData, ApiData, wallet } = req.body;
 
-    data.push({ MinerData , ApiData, wallet});
-    
+    if (data && data.length) {    
+      data.pop();
+      data.push({ MinerData , ApiData, wallet});
+    } 
+    else { 
+      data.push({ MinerData , ApiData, wallet});
+    }
+    console.log(data)
     console.log("POST");
-    //console.log(JSON.stringify([MinerData , ApiData, wallet]));
     res.end(JSON.stringify([MinerData , ApiData, wallet]));
+    
 }
