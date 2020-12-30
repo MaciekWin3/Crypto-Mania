@@ -41,7 +41,7 @@
 			  </div>
 		  
 			  <div class="content">
-				Zawodowy jaracz Marihuany. Tu bedzie miejsce na dalszą część mojego opisu. Lorem Ipsum Lorem ipsum Lorem
+				Entuzjasta mechaniki i militariów, bardzo lubię zakazanego tuńczyka i moje papugi
 				<a href="#">#frontendlover</a> <a href="#">#polishguy</a>
 				<br>
 				<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
@@ -95,10 +95,42 @@
 	<div class="media-content">
 	  <div class="content">
 		<p>
-		  <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+		  <strong>Konrad Jezierski</strong> <small>@ŻubrOnline</small> <small>12m</small>
 		  <br>
-		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+		  Wspaniały portal, który znacząco ułatwił moje życie. Szczególnie musze pogratulować twórcą genialne wykorzystanie technologi XML, która obsługuje artykuły o kryptowalutach. Nigdy bym na to nie wpdał.
+		  Należy także docenić wykres, który moim zdaniem został opracowany z najwiekszą dbałością o szczegóły, tak aby użytkownik mógł cieszyć swoje oczy jego widokiem. Pozdrawiam wszystkich użytkowników.(❁´◡`❁)
+		</p>
+	  </div>
+	  <nav class="level is-mobile">
+		<div class="level-left">
+		  <a class="level-item">
+			<span class="icon is-small"><i class="fas fa-reply"></i></span>
+		  </a>
+		  <a class="level-item">
+			<span class="icon is-small"><i class="fas fa-retweet"></i></span>
+		  </a>
+		  <a class="level-item">
+			<span class="icon is-small"><i class="fas fa-heart"></i></span>
+		  </a>
+		</div>
+	  </nav>
+	</div>
+	<div class="media-right">
+	  <button class="delete"></button>
+	</div>
+  </article>
+  <article class="media my-4 mx-4">
+	<figure class="media-left">
+	  <p class="image is-64x64">
+		<img src="przemek.png">
+	  </p>
+	</figure>
+	<div class="media-content">
+	  <div class="content">
+		<p>
+		  <strong>Przemysław Stachurski</strong> <small>@Przemo</small> <small>18m</small>
+		  <br>
+		  Nie sądziłem, że w tak wyborny sposób można wykorzystać technologie XML. Czapki z głów panowie ༼ つ ◕_◕ ༽つ ༼ つ ◕_◕ ༽つ ༼ つ ◕_◕ ༽つ
 		</p>
 	  </div>
 	  <nav class="level is-mobile">
@@ -120,6 +152,3 @@
 	</div>
   </article>
 
-
-<p>This is the 'about' page. There's not much here.</p>
-<p>Dupa</p>

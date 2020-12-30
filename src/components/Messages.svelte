@@ -1,8 +1,9 @@
 <script context="module">
     import {onMount} from 'svelte';
 
-    //var waluty = [btc, EHOSTUNREACH, ect];
+    
     var currencies = [];
+    var articles = [];
     function loadTitle() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {           
@@ -77,22 +78,32 @@
         xhttp.open("GET", "artykuly.xml", true);
         xhttp.send();
     }
-    function loadArticleCurrency(xmlContent) {
-        var xmlDoc = xmlContent.responseXML;
+    function loadArticleCurrency(xmlCurrency) {
+        console.log("Załadowano loadCurrency");
+        var xmlDoc = xmlCurrency.responseXML;
         var x = xmlDoc.getElementsByTagName("article");
-        var i = document.getElementsByClassName("color-container");        
-        for(var j = 0;j < x.length; j++){
-            let currency = x[j].getElementsByTagName("currency")[0].childNodes[0].nodeValue;
-            if(currency == "ethernum-classic"){
-                currencies = [...currencies, 'is-primary'];
-            } 
-            else if(currency == "bitcoin"){
-                currencies = [...currencies, 'is-warnming'];
+        var i = document.getElementsByClassName("color-container");
+        var zmienna = '';
+        // console.log(i);
+        // console.log(xmlDoc);
+        // console.log(x);
+        for(var j = 0;j < x.length && j < i.length; j++){
+            console.log("iteracja " + j);
+            console.log(x[j]);
+            zmienna = x[j].getElementsByTagName("currency");
+            console.log(zmienna[0].innerHTML);
+
+            if(zmienna[0].innerHTML == 'ethernum-classic'){
+                i[j].classList.add("is-primary");
             }
-            else{
-                currencies = [...currencies, 'is-link'];
-            }          
-        }           
+            else if(zmienna[0].innerHTML == 'bitcoin'){
+                i[j].classList.add("is-warning");
+            }
+            else if(zmienna[0].innerHTML == 'ethernum'){
+                i[j].classList.add("is-link");
+            }
+            articles.push(zmienna[0].innerHTML);
+        }
     }
 
 
@@ -110,7 +121,7 @@
         loadCurrency();
     });
 
-    console.log(currencies);
+    console.log(articles);
 
     
 </script>
@@ -119,7 +130,7 @@
 <section class="section mb-6">
     <div class="is-fullhd mb-6 mx-6 px-6">
         <div class="columns">
-        <div class="message column {x} mx-3">
+            <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
                     <div class="title-container"></div>
                 </div>
@@ -128,7 +139,7 @@
                     <p class = "is-size-6 has-text-right my-2 author-container"></p>
                 </div>
             </div>
-            <div class="message column {x} mx-3">
+            <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
                     <div class="title-container"></div>
                 </div>
@@ -137,7 +148,36 @@
                     <p class = "is-size-6 has-text-right my-2 author-container"></p>
                 </div>
             </div>
-            <div class="message column {x} mx-3">
+            <div class="message column color-container mx-3">
+                <div class="message-header is-size-4 py-3">
+                    <div class="title-container"></div>
+                </div>
+                <div> 
+                    <div class="content-container px-2 pt-1"></div>                 
+                    <p class = "is-size-6 has-text-right my-2 author-container"></p>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="message column color-container mx-3">
+                <div class="message-header is-size-4 py-3">
+                    <div class="title-container"></div>
+                </div>
+                <div> 
+                    <div class="content-container px-2 pt-1"></div>                 
+                    <p class = "is-size-6 has-text-right my-2 author-container"></p>
+                </div>
+            </div>
+            <div class="message column color-container mx-3">
+                <div class="message-header is-size-4 py-3">
+                    <div class="title-container"></div>
+                </div>
+                <div> 
+                    <div class="content-container px-2 pt-1"></div>                 
+                    <p class = "is-size-6 has-text-right my-2 author-container"></p>
+                </div>
+            </div>
+            <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
                     <div class="title-container"></div>
                 </div>

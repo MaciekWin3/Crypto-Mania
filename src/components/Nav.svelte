@@ -26,10 +26,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="navbar-menu" id="nav-links">
+	<div class="navbar-menu px-6" id="nav-links">
 		<div class="navbar-end">
-			<a class="navbar-item" href="about">My Account</a>
-			<a class="navbar-item" href="about">My Wallet</a>
+			<a class="navbar-item" href="about">About us</a>
 		</div>
 	</div>
 </nav>

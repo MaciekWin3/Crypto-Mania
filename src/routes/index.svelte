@@ -45,10 +45,7 @@
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ ApiData, MinerData, wallet})
 		});
-
-		goto('results');
-
-					
+		goto('results');					
 	}
  
 

@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <articles_page>
     <article>
-        <title>masło przejmuje świat</title>
-        <content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus aut mollitia earum sunt debitis ab aliquid architecto atque id.</content>
-        <author>peter</author>
-        <date>01.01.1234</date>
+        <title>Etherium classic Thanos Update</title>
+        <content>According to the ETC explorer by Blockscout, at around 3:45 UTC on Sunday, the ETC mainnet reached a block height of 11,700,000, automatically triggering the anticipated Thanos upgrade.
+        Terry Culver, CEO at ETCLabs, told CoinDesk Thanos is an “important milestone” as the network moves to improve support for existing miners and draw in new ones.</content>
+        <author>Sebastian Sinclair</author>
+        <date>30.11.2020</date>
+        <currency>ethernum-classic</currency>
+        <link>https://www.coindesk.com/ethereum-classic-hard-forked-thanos-upgrade</link>
+    </article>
+    <article>
+        <title>New Bitcoin ATH</title>
+        <content>Bitcoin, the world’s largest cryptocurrency, is on track to close out a banner year with another bang.
+        The digital asset surged above $28,000 Wednesday to a record high, adding to its 47% rally so far in December, according to data compiled by Bloomberg. Bitcoin rose as much as 6.2% to $28,572.10 in Asia trading and is on track for its biggest monthly gain since May 2019.</content>
+        <author>Eric Lam</author>
+        <date>30.12.2020</date>
+        <currency>bitcoin</currency>
+        <link>https://www.bloomberg.com/news/articles/2020-12-30/bitcoin-hits-new-record-set-for-biggest-monthly-gain-since-2019</link>
+    </article>
+    <article>
+        <title>Ethereum price aims for $1,000</title>
+        <content>The interest in Ethereum seems to be stronger than ever as more users continue locking up their ETH coins inside the Eth2 deposit contract. The smart-contracts giant seems to be on the verge of a massive bullish move aiming for $1,000. Ethereum has formed what seems to be a potential bull flag on the 12-hour chart.</content>
+        <author>Lorenzo Stroe</author>
+        <date>30.12.2020</date>
+        <currency>ethernum</currency>
+        <link>https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-on-the-verge-of-a-25-breakout-as-selling-pressure-diminishes-202012300153</link>
+    </article>
+    <article>
+        <title>Is Ethereum Classic undervalued?</title>
+        <content>The cryptocurrency market continues to trade in a bull zone, but Ethereum Classic’s price is still not able to surpass $6 resistance. Ethereum Classic (ETC) might still be undervalued despite all the problems, and some predictions say that this cryptocurrency could be again above the $40 level.</content>
+        <author>Stanko Iliev</author>
+        <date>25.12.2020</date>
         <currency>ethernum-classic</currency>
     </article>
     <article>
@@ -19,6 +45,6 @@
         <content>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit officiis nulla, nostrum facilis ipsam corporis.</content>
         <author>dzban</author>
         <date>01.01.1234</date>
-        <currency>ethernum</currency>
+        <currency>bitcoin</currency>
     </article>
 </articles_page>
