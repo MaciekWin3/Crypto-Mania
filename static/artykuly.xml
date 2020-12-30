@@ -32,19 +32,22 @@
         <author>Stanko Iliev</author>
         <date>25.12.2020</date>
         <currency>ethernum-classic</currency>
+        <link>https://invezz.com/news/2020/12/25/is-january-a-good-month-for-buying-ethereum-classic-etc/</link>
     </article>
     <article>
-        <title>Gimper zgolił włosy</title>
-        <content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum placeat necessitatibus non, perferendis officiis, voluptatibus quam odit voluptates vero possimus provident, suscipit eligendi voluptatem impedit.</content>
-        <author>marian</author>
-        <date>01.01.1234</date>
-        <currency>bitcoin</currency>
+        <title>Ethereum Jumps 12%, Reaches $710 For First Time Since 2018</title>
+        <content>The price of Ethereum, the leading alternative cryptocurrency, or altcoin, has gone up 12.72% in the past 24 hours and was trading at $710 this morning, EST, according to TradingView data. This is the highest price Ethereum has reached since January 2018, when it hit an all-time high of $1,432.</content>
+        <author>Catherine Ross</author>
+        <date>27.12.2020</date>
+        <currency>ethernum</currency>
+        <link>https://finance.yahoo.com/news/ethereum-jumps-12-reaches-710-165547678</link>
     </article>
     <article>
-        <title>Marcin najman jest gupi</title>
-        <content>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit officiis nulla, nostrum facilis ipsam corporis.</content>
-        <author>dzban</author>
-        <date>01.01.1234</date>
-        <currency>bitcoin</currency>
+        <title>Ethereum 2.0 is finally here</title>
+        <content>With just one week to go before the Ethereum 2.0 staking deadline, which was set to determine whether or not the network transitioned to its new-look system, under 20% of the necessary value had been pledged, casting doubts over the endeavour.</content>
+        <author>Joel Khalili</author>
+        <date>30.11.2020</date>
+        <currency>ethernum</currency>
+        <link>https://www.techradar.com/news/against-all-odds-ethereum-20-is-finally-here</link>
     </article>
 </articles_page>

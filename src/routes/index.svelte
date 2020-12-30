@@ -2,21 +2,17 @@
 	//export async function preload(page, session){
 	//	const res = await this.fetch('/index.json');
 	//	const data = await res.json();
-
 	//	return {data};
 	//}
 </script>	
 
 <script>
-
 	import Messages from '../components/Messages.svelte';
 	import Describtion from '../components/Describtion.svelte';
 	import Banner from '../components/Banner.svelte';
 	import { goto } from '@sapper/app';
-
 	let MinerData;
 	let ApiData;
-
 	async function getData(path){
 		try {
             const response = await fetch(path);
@@ -27,16 +23,11 @@
             console.error(error);
         }
 	}
-
-
 	const handleSubmit = async (event) => {
-
 		let currency = event.detail.currency;
 		let wallet = event.detail.wallet;
-
 		let MinerPath = 'https://'+ currency['shortcut'] +'.2miners.com/api/accounts/'+ wallet;
 		let ApiPath = 'https://api.coinlore.net/api/ticker/?id=' + currency['coinLoreID'];
-
 		MinerData = await getData(MinerPath);
 		ApiData = await getData(ApiPath);
 		
@@ -48,7 +39,6 @@
 		goto('results');					
 	}
  
-
 </script>
 
 
@@ -63,6 +53,3 @@
 </section>
 <Banner/>
 <Messages/>
-
-
-

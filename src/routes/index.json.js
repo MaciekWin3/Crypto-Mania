@@ -3,8 +3,6 @@ let data = [];
 
 export function get(req, res, next) {
 
-
-  
   res.end(JSON.stringify(data));
 
 }

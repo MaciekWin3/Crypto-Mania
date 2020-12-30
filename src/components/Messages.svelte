@@ -1,8 +1,6 @@
 <script context="module">
     import {onMount} from 'svelte';
 
-    
-    var currencies = [];
     var articles = [];
     function loadTitle() {
         var xhttp = new XMLHttpRequest();
@@ -17,10 +15,14 @@
     function myFunction(xmlTitle) {
         var xmlDoc = xmlTitle.responseXML;
         var x = xmlDoc.getElementsByTagName("article");
-        var i = document.getElementsByClassName("title-container")
-        var pupa = x[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        var i = document.getElementsByClassName("title-container");
+        var iLink = document.getElementsByClassName("link-container");
+        //var link = x[0].getElementsByTagName("link")[0].childNodes[0].nodeValue;        
         for(var j = 0;j < x.length && j < i.length; j++){
             i[j].innerHTML = x[j].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            //iLink[j].href = link[j];
+            iLink[j].href = x[j].getElementsByTagName("link")[0].childNodes[0].nodeValue;
+            console.log(iLink[j].innerHTML);
         }
     }
 
@@ -84,9 +86,6 @@
         var x = xmlDoc.getElementsByTagName("article");
         var i = document.getElementsByClassName("color-container");
         var zmienna = '';
-        // console.log(i);
-        // console.log(xmlDoc);
-        // console.log(x);
         for(var j = 0;j < x.length && j < i.length; j++){
             console.log("iteracja " + j);
             console.log(x[j]);
@@ -102,18 +101,17 @@
             else if(zmienna[0].innerHTML == 'ethernum'){
                 i[j].classList.add("is-link");
             }
-            articles.push(zmienna[0].innerHTML);
+            articles.push(j);
         }
     }
+
+    
 
 
 </script>
 
 <script>
 
-    
-  
-    let x = "is-link";
     onMount(async () => {
         loadTitle();
         loadContent();
@@ -132,7 +130,7 @@
         <div class="columns">
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
-                    <div class="title-container"></div>
+                    <a class="link-container"><div class="title-container"></div></a>                   
                 </div>
                 <div> 
                     <div class="content-container px-2 pt-1"></div>                 
@@ -141,16 +139,16 @@
             </div>
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
-                    <div class="title-container"></div>
+                    <a class="link-container"><div class="title-container"></div></a>  
                 </div>
                 <div> 
                     <div class="content-container px-2 pt-1"></div>                 
                     <p class = "is-size-6 has-text-right my-2 author-container"></p>
                 </div>
             </div>
-            <div class="message column color-container mx-3">
+            <div class="message column color-container mx-3 mb-5">
                 <div class="message-header is-size-4 py-3">
-                    <div class="title-container"></div>
+                    <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
                     <div class="content-container px-2 pt-1"></div>                 
@@ -161,7 +159,7 @@
         <div class="columns">
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
-                    <div class="title-container"></div>
+                    <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
                     <div class="content-container px-2 pt-1"></div>                 
@@ -170,16 +168,16 @@
             </div>
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
-                    <div class="title-container"></div>
+                    <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
                     <div class="content-container px-2 pt-1"></div>                 
                     <p class = "is-size-6 has-text-right my-2 author-container"></p>
                 </div>
             </div>
-            <div class="message column color-container mx-3">
+            <div class="message column color-container mx-3 mb-5">
                 <div class="message-header is-size-4 py-3">
-                    <div class="title-container"></div>
+                    <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
                     <div class="content-container px-2 pt-1"></div>                 

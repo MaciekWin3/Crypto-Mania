@@ -5,55 +5,42 @@
           const data = await res.json();
           return { data };        
     }
-
     
 </script>
 
 <script>
     import Chart from 'svelte-frappe-charts';
     import {onMount} from 'svelte';
-
     onMount(() => {
         const xmlButton = document.querySelector('#xmlGenerator');
         const modalBg = document.querySelector('.modal-background');
         const modal = document.querySelector('.modal');
         const closeButton = document.querySelector('#closeButton');
-
         xmlButton.addEventListener('click', () => {
             modal.classList.add('is-active');
         });
-
         modalBg.addEventListener('click', () => {
             modal.classList.remove('is-active');
         });
-
         closeButton.addEventListener('click', () => {
             modal.classList.remove('is-active');
         });
-
     });
-
     export let data;
     console.log(data);
-
     let labels = [];
     let values = [];
-
     var i;
-
     for(i = 20; i <= 100; i = i + 4){
         let y = data[0].MinerData.minerCharts[i].timeFormat;
         y = y.substr(5,16).replace('_', ':');
         labels.push(y);
     }
-
     for(i = 20; i <= 100; i = i + 4){
         let x = data[0].MinerData.minerCharts[i].minerHash;
         x = x / 1000000;
         values.push(x);
     }
-
-
     let chartData = {       
 	    tooltipOptions: {
             formatTooltipX: (d) => toString(d).toUpperCase().fontcolor("green"),
@@ -65,26 +52,19 @@
             }
         ]
     };
-
     
-
     console.log(data[0].MinerData.minerCharts[0].timeFormat);
-
     //api data
     let walletAddres = data[0].wallet;
     let currency = data[0].ApiData[0].nameid;
     let price = data[0].ApiData[0].price_usd;
     let weekChange = data[0].ApiData[0].percent_change_7d;
     let dayChange = data[0].ApiData[0].percent_change_24h;
-
     //minerdata
     let miningLuck = data[0].MinerData["24hnumreward"];
-
     //modal
     
     
-
-
     
 </script>
 
