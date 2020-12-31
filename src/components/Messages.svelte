@@ -16,11 +16,9 @@
         var xmlDoc = xmlTitle.responseXML;
         var x = xmlDoc.getElementsByTagName("article");
         var i = document.getElementsByClassName("title-container");
-        var iLink = document.getElementsByClassName("link-container");
-        //var link = x[0].getElementsByTagName("link")[0].childNodes[0].nodeValue;        
+        var iLink = document.getElementsByClassName("link-container");        
         for(var j = 0;j < x.length && j < i.length; j++){
-            i[j].innerHTML = x[j].getElementsByTagName("title")[0].childNodes[0].nodeValue;
-            //iLink[j].href = link[j];
+            i[j].innerHTML = x[j].getElementsByTagName("title")[0].childNodes[0].nodeValue;;
             iLink[j].href = x[j].getElementsByTagName("link")[0].childNodes[0].nodeValue;
             console.log(iLink[j].innerHTML);
         }
@@ -41,7 +39,6 @@
         var xmlDoc = xmlContent.responseXML;
         var x = xmlDoc.getElementsByTagName("article");
         var i = document.getElementsByClassName("content-container")
-        var content = x[0].getElementsByTagName("content")[0].childNodes[0].nodeValue;
         for(var j = 0;j < x.length && j < i.length; j++){
             i[j].innerHTML = x[j].getElementsByTagName("content")[0].childNodes[0].nodeValue;
         }
@@ -62,8 +59,6 @@
         var xmlDoc = xmlContent.responseXML;
         var x = xmlDoc.getElementsByTagName("article");
         var i = document.getElementsByClassName("author-container")
-        console.log(x);
-        var content = x[0].getElementsByTagName("author")[0].childNodes[0].nodeValue;
         for(var j = 0;j < x.length && j < i.length; j++){
             i[j].innerHTML = x[j].getElementsByTagName("author")[0].childNodes[0].nodeValue;
         }
@@ -105,9 +100,6 @@
         }
     }
 
-    
-
-
 </script>
 
 <script>
@@ -130,6 +122,7 @@
         <div class="columns">
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
+                    <!-- svelte-ignore a11y-missing-attribute -->
                     <a class="link-container"><div class="title-container"></div></a>                   
                 </div>
                 <div> 
@@ -139,6 +132,7 @@
             </div>
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
+                    <!-- svelte-ignore a11y-missing-attribute -->
                     <a class="link-container"><div class="title-container"></div></a>  
                 </div>
                 <div> 
@@ -148,6 +142,7 @@
             </div>
             <div class="message column color-container mx-3 mb-5">
                 <div class="message-header is-size-4 py-3">
+                    <!-- svelte-ignore a11y-missing-attribute -->
                     <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
@@ -159,6 +154,7 @@
         <div class="columns">
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
+                    <!-- svelte-ignore a11y-missing-attribute -->
                     <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
@@ -168,6 +164,7 @@
             </div>
             <div class="message column color-container mx-3">
                 <div class="message-header is-size-4 py-3">
+                    <!-- svelte-ignore a11y-missing-attribute -->
                     <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
@@ -177,6 +174,7 @@
             </div>
             <div class="message column color-container mx-3 mb-5">
                 <div class="message-header is-size-4 py-3">
+                    <!-- svelte-ignore a11y-missing-attribute -->
                     <a class="link-container" ><div class="title-container"></div></a>  
                 </div>
                 <div> 
