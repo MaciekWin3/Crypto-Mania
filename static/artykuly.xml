@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articles_page [
+<!ELEMENT article (title,content,author,date,currency,link)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT currency (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+]>
+
 <articles_page>
     <article>
         <title>Etherium classic Thanos Update</title>
