@@ -135,6 +135,14 @@
               <section class="modal-card-body">
                 <textarea  class="textarea has-fixed-size" readonly>
                     <?xml version="1.0" encoding="UTF-8"?>
+                    <raport>
+                        <currency>{currency}</currency>
+                        <price>{price}</price>
+                        <weekChange>{weekChange}</weekChange>
+                        <dayChange>{dayChange}</dayChange>
+                        <miningLuck>{miningLuck}</miningLuck>
+                    </raport> 
+
                     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
                       <xs:element name="raport">
                         <xs:complexType>
