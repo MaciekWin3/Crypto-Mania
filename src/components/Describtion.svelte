@@ -6,15 +6,7 @@
     <div class="container my-6 pl-6">
         <h1 class="is-size-2 title">Najlepsze koparki</h1>
         <h2 class="is-size-3 subtitle">Kup teraz w naszym sklepie</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
-        Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Saepe, cumque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
-        Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Saepe, cumque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
-        Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Saepe, cumque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dignissimos qui totam consectetur.
-        Rerum natus dignissimos itaque vitae tempore? Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Saepe, cumque?</p>
+        <p>Najlepsze koparki zbudowane przez największych specjalistów w branży</p>
     </div>
 </div>
 <div class="column is-4 has-text-centered">

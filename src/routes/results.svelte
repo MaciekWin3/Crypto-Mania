@@ -116,7 +116,7 @@
             </div>
             <div class="column is-6 has-text-centered">
                 <div class="container has-text-centered pt-6">
-                    <button class="button mt-6 is-large is-info is-selected" id="xmlGenerator">Generate XML</button>
+                    <button class="button mt-6 is-large is-info is-selected" id="xmlGenerator">Generate XSD</button>
                 </div>
                 
             </div>                
@@ -134,13 +134,25 @@
               </header>
               <section class="modal-card-body">
                 <textarea  class="textarea has-fixed-size" readonly>
-                    <raport>
-                        <currency>{currency}</currency>
-                        <price>{price}</price>
-                        <weekChange>{weekChange}</weekChange>
-                        <dayChange>{dayChange}</dayChange>
-                        <miningLuck>{miningLuck}</miningLuck>
-                    </raport>                   
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+                      <xs:element name="raport">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element ref="currency"/>
+                            <xs:element ref="price"/>
+                            <xs:element ref="weekChange"/>
+                            <xs:element ref="dayChange"/>
+                            <xs:element ref="miningLuck"/>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="currency" type="xs:string"/>
+                      <xs:element name="price" type="xs:decimal"/>
+                      <xs:element name="weekChange" type="xs:decimal"/>
+                      <xs:element name="dayChange" type="xs:intiger"/>
+                      <xs:element name="miningLuck" type="xs:"/>
+                    </xs:schema>                                      
                 </textarea>
               </section>           
         </div>

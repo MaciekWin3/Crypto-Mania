@@ -14,16 +14,7 @@
 	<div class="navbar-start">
 		<a class="navbar-item" href=".">Home</a>
 		<div class="navbar-item has-dropdown is-hoverable">
-			<a class="navbar-link">
-				Learn More   
-			</a>
-			<div class="navbar-dropdown">
-				<a class="navbar-item">About Bitcoin</a>
-				<a class="navbar-item">About DogeCoin</a>
-				<a class="navbar-item">About FalimyOFiveCoin</a>
-				<hr class="navbar-divider">
-				<a class="navbar-item" href="about">Report an issue</a>
-			</div>
+			
 		</div>
 	</div>
 	<div class="navbar-menu px-6" id="nav-links">
