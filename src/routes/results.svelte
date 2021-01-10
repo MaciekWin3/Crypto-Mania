@@ -68,21 +68,62 @@
     
 </script>
 
-<button class="button mt-5" id="xmlGenerator">Generate XML</button>
-{#if data[0].MinerData == null}
-    <h1>Error</h1>
-{:else}
-<div class="content">
-    <ol type="1">
-      <li>{walletAddres}</li>
-      <li>{currency}</li>
-      <li>{price}</li>
-      <li>{weekChange}</li>
-      <li>{dayChange}</li>
-      <li>{miningLuck}</li>
-    </ol>
-</div>
-{/if}
+<section class="section">
+        <div class="columns">
+            <div class="column is-6">
+                <div class="container px-4 py-4 mx-4 my-4">
+                    <table class="table is-bordered is-striped is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <abbr title="What">What</abbr>
+                                </th>
+                                <th>
+                                    <abbr title="Value">Value</abbr>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wallet addres: </td>
+                                <td>{walletAddres}</td>
+                            </tr>
+                            <tr>
+                                <td>Currnecy: </td>
+                                <td>{currency}</td>
+                            </tr>
+                            <tr>
+                                <td>Current Price: </td>
+                                <td>{price}</td>
+                            </tr>
+                            <tr>
+                                <td>WeekChange: </td>
+                                <td>{weekChange}</td>
+                            </tr>
+                            <tr>
+                                <td>Day Change: </td>
+                                <td>{dayChange}</td>
+                            </tr>
+                            <tr>
+                                <td>Mining Luck: </td>
+                                <td>{miningLuck}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+            </div>
+            <div class="column is-6 has-text-centered">
+                <div class="container has-text-centered pt-6">
+                    <button class="button mt-6 is-large is-info is-selected" id="xmlGenerator">Generate XML</button>
+                </div>
+                
+            </div>                
+        </div>
+
+</section>
+
 <Chart data={chartData} type="line" />
 <div class="modal is-large">
     <div class="modal-background"></div>
